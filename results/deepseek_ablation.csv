@@ -1,0 +1,5 @@
+condition,message_decoder,dna_sequencer,travel_itinerary_planning,trade_calculator,avg
+prompt_only,0.167,0.167,0.711,0.176,0.305
+desc_only,0.083,0.0,0.6,0.078,0.19
+choice_only,0.75,0.667,0.556,0.765,0.684
+combined(prompt+force),0.875,0.75,0.644,0.784,0.763
