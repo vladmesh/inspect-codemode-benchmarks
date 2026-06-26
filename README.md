@@ -79,10 +79,16 @@ ToolQA table/database subset, or τ²-style tasks reframed around structured ret
 
 ## Reproduce
 
+`run_code` is not in a released `inspect_ai` — it is draft
+[#4205](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4205), and these results also
+need the structured-return fix
+([elenaars/inspect_ai#6](https://github.com/elenaars/inspect_ai/pull/6), not yet merged).
+Install the branch that has both:
+
 ```bash
-pip install "inspect_ai[code-mode]" inspect_evals
+pip install "inspect_ai[code-mode] @ git+https://github.com/vladmesh/inspect_ai.git@fix/run-code-structured-tool-returns"
 export OPENROUTER_API_KEY=...
 cd harness
-inspect eval m3_eval.py@m3 -T domain=travel_itinerary_planning -T codemode=true \
+inspect eval m3_eval.py@m3 -T domain=trade_calculator -T codemode=true \
   --model openrouter/qwen/qwen3-235b-a22b-2507 --epochs 3
 ```

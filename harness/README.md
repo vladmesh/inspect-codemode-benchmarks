@@ -19,13 +19,14 @@ Reproducible benchmark code for the two arms (classic vs codemode).
 
 ## Requirements
 
+`run_code` is draft [inspect_ai#4205](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4205)
+plus the structured-return fix ([elenaars/inspect_ai#6](https://github.com/elenaars/inspect_ai/pull/6)),
+not yet in a release. Install the branch with both (`code-mode` pulls in pydantic-monty):
+
 ```bash
-pip install "inspect_ai[code-mode]" inspect_evals   # code-mode pulls in pydantic-monty
+pip install "inspect_ai[code-mode] @ git+https://github.com/vladmesh/inspect_ai.git@fix/run-code-structured-tool-returns"
 export OPENROUTER_API_KEY=...
 ```
-
-`inspect_ai` must include the experimental `run_code` tool with the structured-return fix
-([UKGovernmentBEIS/inspect_ai#4205](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4205)).
 
 ## Run a single arm
 
