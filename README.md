@@ -19,7 +19,7 @@ dataset / scorer / model and differ only in the tool layer.
 | qwen3-coder-30b-a3b | 0.528 | **0.674** | **+14.6pp** |
 | qwen3-8b | 0.347 | **0.486** | **+13.9pp** |
 | qwen3-14b | 0.611 | **0.653** | **+4.2pp** |
-| qwen3-235b-a22b-2507 | 0.774 | 0.742 | −3.2pp |
+| qwen3-235b-a22b-2507 | 0.729 | 0.722 | −0.7pp |
 | deepseek-chat-v3-0324 | 0.729 | 0.493 | −23.6pp |
 
 Codemode helps most models — biggest on the mid-tier, small and code-tuned ones — and is

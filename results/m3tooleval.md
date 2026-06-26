@@ -12,10 +12,8 @@ Inspect port of M3ToolEval (the CodeAct benchmark), 4 function domains, `epochs=
 | qwen3-coder-30b-a3b | 0.528 | **0.674** | **+14.6pp** |
 | qwen3-8b | 0.347 | **0.486** | **+13.9pp** |
 | qwen3-14b | 0.611 | **0.653** | **+4.2pp** |
-| qwen3-235b-a22b-2507 | 0.774 | 0.742 | −3.2pp |
+| qwen3-235b-a22b-2507 | 0.729 | 0.722 | −0.7pp |
 | deepseek-chat-v3-0324 | 0.729 | 0.493 | −23.6pp |
-
-(qwen3-235b is over 3/4 domains — `trade_calculator` excluded.)
 
 - Codemode helps most models — biggest on the mid-tier (qwen3-30b **+24pp**) and the
   code-tuned / small models (coder **+15pp**, 8b **+14pp**); modest on 14b (**+4pp**).

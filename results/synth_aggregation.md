@@ -21,3 +21,5 @@ Data: [synth_aggregation.csv](synth_aggregation.csv). Logs:
 - The gap is largest where the classic baseline is weak — a model that is poor at reading a
   long serialized blob (qwen3-coder, 0.35) is perfect with code (1.0).
 - It ties where classic is already near-ceiling (qwen3-30b: both 0.95).
+
+(qwen3-8b is omitted: its codemode runs errored out repeatedly on this benchmark.)
