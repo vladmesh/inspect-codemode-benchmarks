@@ -15,10 +15,10 @@ dataset / scorer / model and differ only in the tool layer.
 
 | model | classic | codemode | gap |
 |---|---:|---:|---:|
-| qwen3-30b-a3b | 0.387 | **0.774** | **+38.7pp** |
+| qwen3-30b-a3b | 0.438 | **0.681** | **+24.3pp** |
 | qwen3-coder-30b-a3b | 0.528 | **0.674** | **+14.6pp** |
 | qwen3-8b | 0.347 | **0.486** | **+13.9pp** |
-| qwen3-14b | 0.559 | **0.677** | **+11.8pp** |
+| qwen3-14b | 0.611 | **0.653** | **+4.2pp** |
 | qwen3-235b-a22b-2507 | 0.774 | 0.742 | −3.2pp |
 | deepseek-chat-v3-0324 | 0.729 | 0.493 | −23.6pp |
 
