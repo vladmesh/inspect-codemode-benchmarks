@@ -1,5 +1,11 @@
 # DeepSeek-V3: codemode adoption
 
+> Numbers below are from the 2026-06-26 run on the pre-review branch
+> (`vladmesh:fix/run-code-structured-tool-returns`) and were **not** rerun on the current
+> PR head — the ablation costs about as much as the whole M3 sweep. The conclusion still
+> holds on the 2026-07-02 rerun: unforced adoption is 59% there, and with forced
+> `tool_choice=run_code` (synthetic benchmark) DeepSeek scores 0.983.
+
 DeepSeek-V3 scores far below classic in the codemode arm — not because codemode is worse
 for it, but because it frequently **does not invoke the tool**. Across 144 codemode
 samples it calls `run_code` in only ~45%; the other ~55% it writes the Python as a prose /

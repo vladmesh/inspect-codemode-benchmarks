@@ -153,7 +153,7 @@ def _dataset(domain: str) -> list[Sample]:
 
 
 def _codemode_tool(domain: str, strong_desc: bool) -> Tool:
-    rc = run_code(tools=_domain_tools(domain, stringify=False), execute_code=True)
+    rc = run_code(tools=_domain_tools(domain, stringify=False))
     if strong_desc:
         base = ToolDef(rc).description or ""
         rc = ToolDef(rc, description=base + STRONG_DESC).as_tool()

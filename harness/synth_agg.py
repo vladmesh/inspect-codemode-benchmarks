@@ -133,7 +133,7 @@ def _data_tools(stringify: bool) -> list[Tool]:
 def _set_tools(codemode: bool, force: bool) -> Solver:
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         if codemode:
-            state.tools = [run_code(tools=_data_tools(stringify=False), execute_code=True)]
+            state.tools = [run_code(tools=_data_tools(stringify=False))]
             if force:
                 state.tool_choice = ToolFunction(name="run_code")
         else:

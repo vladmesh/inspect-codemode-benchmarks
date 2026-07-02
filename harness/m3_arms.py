@@ -298,7 +298,7 @@ def _set_tools(codemode: bool) -> Solver:
 
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         tools = _tools()
-        state.tools = [run_code(tools=tools, execute_code=True)] if codemode else tools
+        state.tools = [run_code(tools=tools)] if codemode else tools
         return state
 
     return solve
